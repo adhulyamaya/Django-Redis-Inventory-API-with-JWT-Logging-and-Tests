@@ -1,7 +1,7 @@
 # Django-Redis-Inventory-API-with-JWT-Logging-and-Tests
 __________________________________________________________
 
-This project is a RESTful API for managing inventory items using Django and Redis. It supports user registration and authentication using JWT tokens, as well as CRUD operations for inventory items.
+This project is a RESTful API built with Django Rest Framework for managing inventory items. It uses PostgreSQL for data storage, Redis for caching, and JWT for secure authentication. The API includes logging for monitoring and debugging, along with unit tests to ensure reliable functionality.
 
 ## Features
 __________________________________________________________
