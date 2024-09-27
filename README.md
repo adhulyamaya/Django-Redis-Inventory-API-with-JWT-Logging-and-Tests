@@ -36,7 +36,10 @@ ___________________________________________________________
 ___________________________________________________________
 
 1. Clone the repository:
-   git clone https://github.com/adhulyamaya/Django-Redis-Inventory-API.git
+  1. Clone the repository:
+
+   ```bash
+   git clone [https://github.com/adhulyamaya/Django-Redis-Inventory-API.git](https://github.com/adhulyamaya/Django-Redis-Inventory-API.git)
 2.Navigate to the project directory:
    cd Django-Redis-Inventory-API
 3.Create a virtual environment 
