@@ -72,47 +72,60 @@ ___________________________________________________________
 ### API Documentation
 _______________________________________________________________
 1)User Registration : /api/register/
- Method: POST
+ 
+   ```
+Method: POST
  Request Body:{
     "username": "your_username",
     "password": "your_password"
 }
-
+  ```
 2)User Login: /api/login/
+  ```
  Method: POST
  Request Body:{
     "username": "your_username",
     "password": "your_password"
 }
+  ```
 
 3) Inventory Items
   Get All Items: /api/items/
+  
+  ```
   Method: GET
+  ```
 
 4)Create an Item
   Endpoint: /api/items/
+   ```
   Method: POST
   Request Body:{
     "name": "item_name",
     "quantity": 10,
     "price": 20.5
 }
-
+  ```
 5)Get Item Details: /api/items/<item_id>/
+  ```
 Method: GET
-
+  ```
 6)Update an Item
 Endpoint: /api/items/<item_id>/
+  ```
 Method: PUT
 Request Body:{
     "name": "updated_item_name",
     "quantity": 15,
     "price": 25.0
 }
+  ```
 
 7)Delete an Item : /api/items/<item_id>/
+  ```
 Method: DELETE
 Response: Success message
+  ```
  
 
 
