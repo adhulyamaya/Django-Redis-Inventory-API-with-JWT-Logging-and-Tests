@@ -125,11 +125,11 @@ LOGGING = {
         },
     },
     'loggers': {
-        'django': {
-            'handlers': ['console', 'file'],
-            'level': 'DEBUG',  # Logs at DEBUG level and above
-            'propagate': True,
-        },
+        # 'django': {
+        #     'handlers': ['console', 'file'],
+        #     'level': 'DEBUG',  # Logs at DEBUG level and above
+        #     'propagate': True,
+        # },
         'inventory': {  # Custom logger for your app
             'handlers': ['file', 'console'],
             'level': 'DEBUG',

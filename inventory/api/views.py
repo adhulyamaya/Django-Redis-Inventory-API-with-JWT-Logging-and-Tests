@@ -51,6 +51,8 @@ class UserLoginView(APIView):
             }, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+
+
 # Get the logger instance for your inventory app
 logger = logging.getLogger('inventory')
 
@@ -81,6 +83,8 @@ class ItemListCreate(APIView):
         except Exception as e:
             logger.error(f"Error creating item: {e}")  # Log the error
             return Response({"error": "Failed to create item"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
 
 class ItemDetail(APIView):
     permission_classes = [IsAuthenticated]  # Require JWT authentication
