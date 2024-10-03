@@ -35,28 +35,39 @@ ___________________________________________________________
 ### Steps to Install
 ___________________________________________________________
 
-1. Clone the repository:
-  1. Clone the repository:
+ 1. Clone the repository:
 
    ```bash
    git clone [https://github.com/adhulyamaya/Django-Redis-Inventory-API.git](https://github.com/adhulyamaya/Django-Redis-Inventory-API.git)
   ```
 
 2.Navigate to the project directory:
+```bash
    cd Django-Redis-Inventory-API
+  ```
 3.Create a virtual environment 
+```bash
    python -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+  ```
 4.Install the required packages:
+  ```
  pip install -r requirements.txt
+  ```
 5.Set up the PostgreSQL database:
+  ```
    Create a database for your application.
    Update the DATABASES setting in settings.py with your database credentials.
+  ```
 6.Run migrations to create the necessary database tables:
+  ```
    python manage.py migrate
+  ```
 7.Start the Redis server
 8.Run the Django server:
+  ```
     python manage.py runserver
+  ```
 
 ### API Documentation
 _______________________________________________________________
