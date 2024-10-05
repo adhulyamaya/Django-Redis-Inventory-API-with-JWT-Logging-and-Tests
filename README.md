@@ -98,7 +98,8 @@ Method: POST
 
 4) Create an Item
   Endpoint: /api/items/
-   ```
+
+```
   Method: POST
   Request Body:{
   "name": "item name ",
@@ -110,11 +111,13 @@ Method: POST
 }
   ```
 5)Get Item Details: /api/items/<item_id>/
+
   ```
-Method: GET
+    Method: GET
   ```
 6)Update an Item
 Endpoint: /api/items/<item_id>/
+
   ```
 Method: PUT
 Request Body:{
@@ -128,6 +131,7 @@ Request Body:{
   ```
 
 7)Delete an Item : /api/items/<item_id>/
+
   ```
 Method: DELETE
 Response: Success message
