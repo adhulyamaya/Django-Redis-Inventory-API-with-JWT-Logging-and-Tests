@@ -80,7 +80,7 @@ Method: POST
     "password": "your_password"
 }
   ```
-2)User Login: /api/login/
+2) User Login: /api/login/
   ```
  Method: POST
  Request Body:{
@@ -96,14 +96,17 @@ Method: POST
   Method: GET
   ```
 
-4)Create an Item
+4) Create an Item
   Endpoint: /api/items/
    ```
   Method: POST
   Request Body:{
-    "name": "item_name",
-    "quantity": 10,
-    "price": 20.5
+  "name": "item name ",
+  "description":"hi",
+  "quantity": 10,
+  "unit_price": 20.5,
+  "category": "hai",
+  "supplier": "hai"
 }
   ```
 5)Get Item Details: /api/items/<item_id>/
@@ -115,9 +118,12 @@ Endpoint: /api/items/<item_id>/
   ```
 Method: PUT
 Request Body:{
-    "name": "updated_item_name",
-    "quantity": 15,
-    "price": 25.0
+ "name": "item name updation",
+ "description":"hi",
+ "quantity": 10,
+ "unit_price": 20.5,
+ "category": "hai",
+ "supplier": "hai"
 }
   ```
 

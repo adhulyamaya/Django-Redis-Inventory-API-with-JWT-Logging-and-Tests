@@ -26,7 +26,9 @@ SECRET_KEY = 'django-insecure-&alzu79qnq)f*fw)=*3m03$wbpywdp_x1(qv92@g=9i)j4@8de
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = ['Inventory_system.onrender.com', 'localhost']
+
 
 
 # Application definition
@@ -78,18 +80,17 @@ REST_FRAMEWORK = {
     ),
 }
 
-# Token expiration settings (optional)
+
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
 }
 
-# settings.py
 
 CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': 'redis://127.0.0.1:6379/1',  # Default Redis port
+        'LOCATION': 'redis://127.0.0.1:6379/1',  
         'OPTIONS': {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
         }
@@ -130,7 +131,7 @@ LOGGING = {
         #     'level': 'DEBUG',  # Logs at DEBUG level and above
         #     'propagate': True,
         # },
-        'inventory': {  # Custom logger for your app
+        'inventory': {  
             'handlers': ['file', 'console'],
             'level': 'DEBUG',
             'propagate': False,
@@ -184,6 +185,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
+# STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

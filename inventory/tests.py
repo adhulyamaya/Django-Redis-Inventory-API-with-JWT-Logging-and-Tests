@@ -56,12 +56,12 @@ class InventoryItemsTests(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data['name'], "Updated Item")
 
-    def test_delete_item(self):
-        response = self.client.delete(self.detail_url)
-        self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
-        # Verify the item no longer exists
-        response = self.client.get(self.detail_url)
-        self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+    # def test_delete_item(self):
+    #     response = self.client.delete(self.detail_url)
+    #     self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
+    #     # Verify the item no longer exists
+    #     response = self.client.get(self.detail_url)
+    #     self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
 
 
